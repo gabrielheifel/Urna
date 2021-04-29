@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urna Eletrônica</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="urna">
+    <div class="tela">
+      <div class="container-1">
+        <div class="container-1-left">
+          <div class="container-1-1">
+            <span>SEU VOTO PARA</span>
+          </div>
+          <div class="container-1-2">
+            <span>VEREADOR</span>
+          </div>
+          <div class="container-1-3">
+            <div class="numero pisca"></div>
+            <div class="numero"></div>
+          </div>
+          <div class="container-1-4">
+            Nome: simas <br>
+            Partido: mecanica <br>
+            Vice: turbo
+          </div>
+        </div>
+        <div class="container-1-right">
+          <div class="container-1-image">
+            <img src="./images/dilera.png" alt="Prefeito Dilera">
+            Prefeito
+          </div>
+          <div class="container-1-image small">
+            <img src="./images/psiu.png" alt="Vice Psiu">
+            Vice-Prefeito
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        Aperte a tela: <br>
+        CONFIRMA para CONFIRMAR este voto <br>
+        CORRIGE para REINICIAR este voto
+      </div>
+    </div>
+    <div class="teclado">
+      <div class="teclado-linha">
+        <div class="teclado-botao tec-botao">1</div>
+        <div class="teclado-botao tec-botao">2</div>
+        <div class="teclado-botao tec-botao">3</div>
+      </div>
+      <div class="teclado-linha">
+        <div class="teclado-botao tec-botao">4</div>
+        <div class="teclado-botao tec-botao">5</div>
+        <div class="teclado-botao tec-botao">6</div>
+    </div>
+    <div class="teclado-linha">
+        <div class="teclado-botao tec-botao">7</div>
+        <div class="teclado-botao tec-botao">8</div>
+        <div class="teclado-botao tec-botao">9</div>
+    </div>
+    <div class="teclado-linha">
+        <div class="teclado-botao tec-botao">0</div>
+    </div>
+    <div class="teclado-linha">
+      <div class="teclado-botao botao-branco" onclick="branco()">BRANCO</div>
+      <div class="teclado-botao botao-corrige" onclick="corrige()">CORRIGE</div>
+      <div class="teclado-botao botao-confirma" onclick="confirma()">CONFIRMA</div>
+    </div>
+    
+  </div>
+
+  <script src="etapas.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
